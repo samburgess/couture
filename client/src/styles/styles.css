@@ -1,0 +1,68 @@
+
+:root{
+    --gradient: linear-gradient(
+        90deg,
+        #ffffff,
+        #ffdbf7
+   );
+}
+
+.ScrollWrap{
+    padding: 2vh;
+}
+
+.ScrollItem{
+    height:25vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-style: groove;
+    border-left: none;
+    border-right: none;
+    padding: 1vh;
+
+    background: #ddd;
+    background-image: var(--gradient);
+    background-size: 200%;
+    animation: mv-grad 0.5s infinite alternate;
+}
+
+@keyframes mv-grad{
+    0%{
+        background-position: left;
+    }
+    100%{
+        background-position: right;
+    }
+}
+
+.ImageWheel{
+    display: flex;
+    flex-direction: row;
+    height: 25vh;
+    width: 35vh
+}
+
+.ImageImage{
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+.ImageButton{
+    height: stretch;
+    background-color: rgba(107, 107, 107, 0.493);
+    border: none;
+    color: white;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.ImageHolder{
+    height: 25vh;
+    width: 25vh;
+    display: flex;
+    justify-content: center;
+}
